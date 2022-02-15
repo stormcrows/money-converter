@@ -37,7 +37,7 @@ const app = express()
     try {
       const args: ConvertInput = { amount: 1, ...req.body }
       validateArgs(args)
-      const result = convert(req.body)
+      const result = convert(args)
       res.send({ result })
     } catch (err: any) {
       res.status(400).send(err.message)

@@ -28,7 +28,7 @@ const swap = ({ amount, fromCurrency, toCurrency }: SwapInput) => {
 const round = (x: number) => Math.round(x * 100) / 100
 
 const convert = ({
-  amount = 1,
+  amount,
   fromCurrency,
   toCurrency,
   toAmount = 0,
